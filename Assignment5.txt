@@ -1,0 +1,163 @@
+Question-1
+
+import java.util.Scanner;
+public class Addition{
+	public static void main(String[] args){
+		Scanner sc = new Scanner(System.in);
+		int a;
+		int b;
+		System.out.println("Enter the first No");
+		a = sc.nextInt();
+		System.out.println("Enter the second No");
+		b = sc.nextInt();
+		int c = a+b;
+				System.out.println("Sum of the two No is " + c);
+	}
+	
+}
+
+Question-2
+
+import java.util.Scanner;
+public class LeapYear{
+	public static void main(String[] args){
+		Scanner sc = new Scanner(System.in);
+		int year;
+		System.out.println("Enter the Year");
+		year = sc.nextInt();
+		if(year%4==0){
+			if(year%100==0){
+				if(year%400==0){
+					System.out.println("Leap Year");
+				}
+				else{
+					System.out.println("Not a Leap Year");
+				}
+			}
+			else{
+				System.out.println("Leap Year");
+			}
+		}
+		else{
+			System.out.println("Not a Leap Year");
+		}
+	}
+}
+
+Question-3
+
+class Patter{
+	public static void main(String[] args){
+		int i,j;
+		for(i=0;i<4;i++){
+			for(j=0;j<=i;j++){
+				System.out.print("*");
+			}
+			System.out.println(" ");
+		}
+	}
+}
+
+Question-4
+
+import java.util.Scanner;
+public class Greatestno
+{
+
+	public static void main(String[] args){
+	
+	int n1,n2,n3;
+	
+Scanner sc = new Scanner(System.in);
+	System.out.println("Enter the first no");
+	n1=sc.nextInt();
+	System.out.println("Enter the second no");
+	n2=sc.nextInt();
+	System.out.println("Enter the third no");
+	n3=sc.nextInt();
+	if(n1>n2&&n2>n3){
+	System.out.println("Greatest No is " + n1);
+	}
+	else if(n2>n1&&n1>n3)
+	{
+	System.out.println("Greatest No is " + n2);
+	}
+	else
+	{
+	System.out.println("Greatest No is " + n3);
+	}
+   }
+}
+
+Question-5
+
+import java.util.Scanner;
+public class PalindromeTest{
+	
+	public static void main(String[] args){
+		
+	Scanner sc =  new Scanner(System.in);
+	int n,b=0;
+	int a=0,c;
+	System.out.println("Enter the  no to check for palindrome");
+	n = sc.nextInt();
+	c=n;
+	while(n!=0){
+	a=n%10;
+	b=b*10+a;
+	n=n/10;
+		}
+		if(c==b){
+		System.out.println("Entered no is a Palindrome");	
+		
+		}
+		else{
+		System.out.println("Entered no is not a Palindrome");	
+		}
+	}	
+}	
+
+Question-6
+
+import java.util.Scanner;
+public class PrimeTest{
+	
+	public static void main(String[] args){
+		int a;
+		int i;
+		boolean flag = false;
+		Scanner sc = new Scanner(System.in);
+		a = sc.nextInt();
+		for(i=2;i<=a/2;i++){
+			if(a%i!=0){
+				flag = true;
+				break;
+			}
+		}
+		if(flag = true){
+			System.out.println("Entered No is Prime No ");
+		}
+		else
+			System.out.println("Entered No is Not a Prime No ");
+		
+	}
+}
+
+Question-7
+
+import java.util.Scanner;
+public class NoReverse{
+	
+	public static void main(String[] args){
+		Scanner sc = new Scanner(System.in);
+		int n;
+		int a=0,b=0;
+		n = sc.nextInt();
+		while(n!=0){
+			a=n%10;
+			b=((b*10)+a);
+			n=n/10;
+		}
+		System.out.println(""+b);
+	}
+}
