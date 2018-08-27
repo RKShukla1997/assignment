@@ -1,0 +1,40 @@
+Question-1
+
+class Demo{
+	static void Show(){
+		System.out.println("Invoking Static method without object");
+	}
+}
+
+public class Static{
+	public static void main(String[] args){
+		Demo.Show();
+	}
+}
+
+Question-2
+
+class Constructor{
+	Constructor(){
+		System.out.println("Hello Java");
+	}
+	Constructor(int x){
+		this();
+	}
+}
+public class DefaultConstructor{
+	public static void main(String[] args){
+		Constructor c = new Constructor(10);
+	}
+}
+
+Question-3
+
+/*
+Final Class Cannot be inherited.
+*/
+public final Demo{
+	void Display(){
+		
+	}
+}
