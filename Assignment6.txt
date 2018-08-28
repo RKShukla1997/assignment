@@ -33,7 +33,7 @@ Question-3
 /*
 Final Class Cannot be inherited.
 */
-public final Demo{
+public final class Demo{
 	void Display(){
 		
 	}
