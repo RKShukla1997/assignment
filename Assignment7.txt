@@ -1,0 +1,91 @@
+Question1
+
+interface Animal{
+	void speak();
+		void eat();
+}
+
+class cat implements Animal{
+	public void speak(){
+		System.out.println("I am a Cat");
+	}
+	
+	public void eat(){
+		System.out.println("I am eating");
+	}
+}
+
+class dog implements Animal{
+	public void speak(){
+		System.out.println("I am a Dog");
+	}
+	
+	public void eat(){
+		System.out.println("I am eating");
+	}
+}
+
+public class Interface{
+	public static void main(String[] args){
+		dog d = new dog();
+		cat c = new cat();
+		d.speak();
+		d.eat();
+		c.speak();
+		c.eat();
+	}
+	
+}
+
+Question2
+
+abstract class Animal{
+	String color = "Brown";
+	String breed = "GermanShefard";
+	String name = "Tommy";
+	abstract void eat();
+	void speak(){
+		System.out.println("I am a Animal");
+	}
+}
+class Dog extends Animal{
+	void eat(){
+	System.out.println("I am eating");
+	}
+}
+
+public class Abstract{
+	public static void main(String[] args){
+		Dog d = new Dog();
+		System.out.println("My name is " + d.name);
+		System.out.println("My color is " + d.color);
+		System.out.println("My breed is " + d.breed);
+		d.eat();
+		d.speak();
+	}
+}
+
+Question3
+
+import java.util.Scanner;
+class StringInt{
+	public static void main(String[] args){
+	Scanner sc = new Scanner(System.in);
+	String s1;
+	String s2;
+	System.out.println("Enter the first no");
+	s1 =sc.nextString();
+	System.out.println("Enter the Second no");
+	s2 =sc.nextLine();
+	int num1;
+	int num2;
+	num1 = Integer.parseInt(s1);
+	num2 = Integer.parseInt(s2);
+	if(num1>num2){
+		System.out.println("First no is maximum");
+	}
+	else{
+		System.out.println("Second no is maximum");
+	}
+	}
+}

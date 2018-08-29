@@ -1,0 +1,63 @@
+Question-1
+
+import java.util.Scanner;
+class Rectangle{
+	public double l;
+	public double b;
+	public double area;
+	public void CalculateArea(){
+		area = l*b;
+		System.out.println("Area of rectangle is " + area);
+	}
+}
+
+public class RectangleArea{
+	public static void main(String[] args){
+		Scanner sc = new Scanner(System.in);
+		Rectangle r = new Rectangle();
+		r.l=sc.nextDouble();
+		r.b=sc.nextDouble();
+		r.CalculateArea();
+	}
+	
+}
+
+Question-2
+
+import java.util.Scanner;
+class ComplexNo{
+	public int a;
+	public int b;
+	public void Display(){
+		System.out.println(a+"+"+b+"i");
+	}
+	
+}
+public class Complex{
+	public static void main(String[] args){
+		Scanner sc = new Scanner(System.in);
+		ComplexNo cn = new ComplexNo();
+		cn.a = sc.nextInt();
+		cn.b = sc.nextInt();
+		cn.Display();
+	}
+}
+
+Question-4
+
+class Test{
+	static int a;
+	//int b=20;
+	static
+	{
+		a=10;
+		System.out.println("static block Called");
+	}
+}
+
+public class StaticBlock{
+	public static void main(String[] args){
+		System.out.println(Test.a);
+		
+		}
+	}
