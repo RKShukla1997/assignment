@@ -43,6 +43,31 @@ public class Complex{
 	}
 }
 
+Question-3
+
+import java.util.Scanner;
+public class SecondLargest{
+	public static void main(String[] args){
+		Scanner sc = new Scanner(System.in);
+		int x[] = new int[10];
+		int i,j;
+		int temp;
+		System.out.println("Enter the Array");
+		for(i=0;i<10;i++){
+			x[i] = sc.nextInt();
+		}
+		for(i=0;i<10;i++){
+			for(j=i+1;j<10;j++){
+				if(x[i]>x[j]){
+					temp = x[i];
+					x[i] = x[j];
+					x[j] = temp;
+				}
+			}
+		}
+		System.out.println(" Second largest in the Array " + x[8]);
+	}
+}
 Question-4
 
 class Test{
