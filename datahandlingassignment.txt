@@ -1,0 +1,18 @@
+import java.io.*;
+public class DataHandling1{
+		public static void main(String[] args) throws Exception{
+			File abc  = new File("abc.txt");
+			abc.createNewFile();
+			System.out.println("File at : "+abc.getAbsolutePath());
+			//Adding paths
+			FileOutputStream fos = new FileOutputStream(abc);
+			fos.write((new String("C:/\n")).getBytes());
+			fos.write((new String("C:/users\n")).getBytes());
+			fos.write((new String("C:/windows\n")).getBytes());
+			fos.write((new String("C:/windows/System32\n")).getBytes());
+			FileInputStream fis = new FileInputStream(abc);
+			int x;
+			while ((x = fis.read()) != -1)
+				System.out.print((char)x);
+		}
+}
